@@ -27,18 +27,17 @@ const Login = () => {
     },
     validate,
     onSubmit: (values) => {
-      console.log(values);
       loginUser(values);
     },
   });
 
   const loginUser = async (values) => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const credential = await auth.signInWithEmailAndPassword(
         values.email,
         values.password
       );
-      console.log(credential);
     } catch (error) {
       console.log("error:", error);
     }

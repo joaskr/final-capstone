@@ -9,7 +9,6 @@ const ZipThread = () => {
     fetchData();
     if (Array.isArray(synData)) {
       setLength(synData.length);
-      console.log(length);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visible, length]);
@@ -22,7 +21,6 @@ const ZipThread = () => {
         return res.json();
       })
       .then((data) => setSynData([...data]));
-    console.log(synData);
   }
   const headers = ["File", "Time", "Source", "Source Mac", "Info"];
   return (

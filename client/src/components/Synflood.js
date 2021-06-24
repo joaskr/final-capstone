@@ -11,7 +11,6 @@ const Synflood = () => {
     fetchData();
     if (Array.isArray(synData)) {
       setLength(synData.length);
-      console.log(length);
     }
   }, [visible, length]);
   const getData = () => {
@@ -23,7 +22,6 @@ const Synflood = () => {
         return res.json();
       })
       .then((data) => setSynData([...data]));
-    console.log(synData);
   }
   const headers = ["File", "Time", "Count", "Source", "Source_Mac", "Info"];
   return (

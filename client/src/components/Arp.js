@@ -9,13 +9,11 @@ const Arp = () => {
     fetchData();
     if (Array.isArray(synData)) {
       setLength(synData.length);
-      console.log(length);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visible, length]);
   const getData = () => {
     setVisible(true);
-    console.log(synData);
   };
   async function fetchData() {
     await fetch("http://localhost:3001/arppoison")
@@ -23,7 +21,6 @@ const Arp = () => {
         return res.json();
       })
       .then((data) => setSynData([...data]));
-    console.log(synData);
   }
   const headers = ["File", "Time", "Source Mac", "Info"];
   return (
