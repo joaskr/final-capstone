@@ -19,7 +19,8 @@
   margin-bottom: 10px;
 }
 .testimonials {
-  height: 60vh;
+  // height: 60vh;
+  height: 510px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,20 +28,20 @@
   background: $accent5;
   margin-bottom: 5px;
 }
-button.rec-dot_active{
-  background-color: rgb(165,63,82);
-  box-shadow: 0 0 1px 3px rgba(165,63,82, 0.5);
+button.rec-dot_active {
+  background-color: rgb(165, 63, 82);
+  box-shadow: 0 0 1px 3px rgba(165, 63, 82, 0.5);
 }
 button.rec-arrow {
-  background-color: rgb(165,63,82);
+  background-color: rgb(165, 63, 82);
   color: #fff;
 }
 button.rec-arrow:hover {
-  background-color: rgb(165,63,82);
+  background-color: rgb(165, 63, 82);
   color: #fff;
 }
 button.rec-arrow:disabled {
-  background-color: rgba(165,63,82, 0.2);
+  background-color: rgba(165, 63, 82, 0.2);
   color: #fff;
 }
 
