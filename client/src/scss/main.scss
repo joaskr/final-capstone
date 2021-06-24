@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500;600;700&family=Spectral:wght@300;400;600&display=swap");
+@import "normalize.css";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/mixins";
+@import "elements/header";
+@import "elements/nav";
+@import "elements/welcome";
+@import "elements/columns";
+@import "elements/column";
+@import "elements/offer";
+@import "elements/video";
+@import "elements/clients";
+@import "elements/testimonials";
+@import "elements/footer";
+@import "elements/login";
+@import "elements/about";
+@import "elements/divided";
+@import "elements/contactform";
+@import "elements/contactcontent";
+@import "elements/datatable";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-base;
+  font-weight: 300;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+h1 {
+  margin: 0;
+  font-family: $font-bold;
+  font-weight: 700;
+}
+h2 {
+  font-weight: 400;
+  font-family: $font-bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  font-size: 18px;
+}
+.contact-section {
+  display: flex;
+}

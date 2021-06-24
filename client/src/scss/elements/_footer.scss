@@ -1,0 +1,39 @@
+.footer {
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-footer {
+  background-image: url(../../assets/footer.jpg);
+}
+.about-footer {
+  background-image: url(../../assets/office-plant.jpg);
+}
+.footer-text {
+  color: $font-contrast;
+}
+.footer-content {
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-btn {
+  padding: 15px;
+  color: $font-contrast;
+  border: 1px solid $accent2;
+  cursor: pointer;
+  background: none;
+  a {
+    text-decoration: none;
+    color: $font-contrast;
+  }
+}
+.footer-btn:hover {
+  background-color: $accent2;
+}

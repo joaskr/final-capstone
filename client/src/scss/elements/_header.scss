@@ -1,0 +1,53 @@
+.banner {
+  width: 100vw;
+  height: 93vh;
+  background-image: url("../../assets/headerimg.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-header,
+.sub-header {
+  text-align: center;
+}
+.main-header {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: $font-contrast;
+  text-transform: uppercase;
+}
+.sub-header {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: $font-contrast;
+  font-variant: small-caps;
+  font-family: $font-base;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+.header-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-button {
+  color: $font-contrast;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.header-icon {
+  font-size: 3rem;
+  text-align: center;
+}
+.header-button:hover {
+  color: $accent2;
+}

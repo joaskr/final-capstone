@@ -1,0 +1,36 @@
+.divided-div {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.divided-pic-div {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right-divided {
+  flex-direction: row-reverse;
+}
+.right-divided .divided-pic-div {
+  background-image: url(../../assets/office-image.jpg);
+}
+.left-divided .divided-pic-div {
+  background-image: url(../../assets/office-people.jpg);
+}
+.divided-text-div {
+  width: 50%;
+  height: 60%;
+  @include container;
+  padding: 0 40px;
+  p {
+    text-align: justify;
+    line-height: 20px;
+  }
+  @include textNavlink;
+  b {
+    font-weight: 600;
+  }
+}

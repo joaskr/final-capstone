@@ -1,0 +1,66 @@
+.nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  height: 7vh;
+  background-color: #1b1b1b;
+}
+.nav-list {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+.nav-link-cont {
+  width: 20%;
+  box-sizing: border-box;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  width: 100%;
+  padding-top: 6px;
+  text-align: center;
+  height: 100%;
+  text-decoration: none;
+  color: $font-contrast;
+  background: linear-gradient(to bottom, $accent2 0%, $accent2 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  transition: background-size 0.2s;
+}
+.nav-link:hover {
+  background-size: 4px 50px;
+}
+.logo {
+  width: 250px;
+}
+.invisible {
+  display: none;
+}
+.account-button {
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  padding: 1px 4px;
+  font-size: 1.1rem;
+  background: none;
+  border: 2px solid $accent2;
+  background-color: $accent2;
+  border-radius: 50%;
+}
+.account-link {
+  text-decoration: none;
+  color: $font-contrast;
+}
+.logout-button {
+  background: $accent3;
+  border: 1px solid $accent3;
+}

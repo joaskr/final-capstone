@@ -1,0 +1,25 @@
+.clients-section {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.clients-track {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.clients-section-content {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

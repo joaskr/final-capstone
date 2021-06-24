@@ -1,0 +1,49 @@
+.test-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+}
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+.testimonials-item > * {
+  margin-bottom: 10px;
+}
+.testimonials {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background: $accent5;
+  margin-bottom: 5px;
+}
+button.rec-dot_active{
+  background-color: rgb(165,63,82);
+  box-shadow: 0 0 1px 3px rgba(165,63,82, 0.5);
+}
+button.rec-arrow {
+  background-color: rgb(165,63,82);
+  color: #fff;
+}
+button.rec-arrow:hover {
+  background-color: rgb(165,63,82);
+  color: #fff;
+}
+button.rec-arrow:disabled {
+  background-color: rgba(165,63,82, 0.2);
+  color: #fff;
+}
+
+// button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+//   box-shadow: 0 0 1px 3px rgba(235,16,16,0.5);
+// }

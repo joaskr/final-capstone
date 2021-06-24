@@ -1,0 +1,33 @@
+.contact-content {
+  width: 65vw;
+  height: 93vh;
+  background-color: $accent5;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sm-image {
+  width: 50px;
+  height: 50px;
+}
+.social-media {
+  align-self: center;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.contact-content-text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .horizontal-line {
+    align-self: center;
+  }
+  h2 {
+    align-self: center;
+  }
+}

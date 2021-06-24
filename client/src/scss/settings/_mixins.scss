@@ -1,0 +1,18 @@
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+@mixin textNavlink {
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+  }
+  a:hover {
+    background-color: $accent2;
+    color: $font-contrast;
+  }
+}

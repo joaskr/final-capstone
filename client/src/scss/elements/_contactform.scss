@@ -1,0 +1,31 @@
+.contact-form-content {
+  width: 35vw;
+  height: 93vh;
+  background-image: url("../../assets/headerimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-first-row {
+  display: flex;
+  justify-content: space-between;
+}
+.form-first-row > * {
+  width: 45%;
+}
+select {
+  width: 100%;
+  background: none;
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid $accent2;
+}
+select:focus {
+  border-bottom: 2px solid $accent3;
+}

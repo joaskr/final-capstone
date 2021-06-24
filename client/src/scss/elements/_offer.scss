@@ -1,0 +1,47 @@
+.offer-section {
+  height: 70vh;
+  display: flex;
+  margin-bottom: 5px;
+}
+.offer-image-div {
+  width: 40%;
+  height: 100%;
+}
+.offer-text-div {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.offer-text {
+  width: 80%;
+  height: 80%;
+  @include container;
+  p {
+    text-align: justify;
+  }
+  @include textNavlink;
+}
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+}
+.plan {
+  width: 30%;
+  h3 {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  ul li {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+    list-style: none;
+  }
+}
