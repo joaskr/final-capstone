@@ -20,7 +20,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.use("/arppoison", arppoison);
 app.use("/synflood", synflood);
@@ -30,7 +30,9 @@ app.use("/zipthread", zipthread);
 app.use(function (req, res, next) {
   next(createError(404));
 });
-
+app.get("*", (res, req) => {
+  res.sendFile(path.join(__dirname + "../client/build/index.html"));
+});
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
