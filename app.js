@@ -4,6 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var cors = require("cors");
+const rootRouter = express.Router();
 
 var arppoison = require("./routes/arppoison");
 var synflood = require("./routes/synflood");
@@ -51,8 +52,12 @@ app.use(function (req, res, next) {
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/client/build")));
   app.get("*", (res, req) => {
+    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  });
+  rootRouter.get("(/*)?", async (req, res, next) => {
     res.sendFile(path.join(__dirname + "/client/src/index.html"));
   });
+  app.use(rootRouter);
 }
 
 // error handler
