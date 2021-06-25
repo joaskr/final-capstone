@@ -26,14 +26,14 @@ function About() {
             photo={kasia}
             name="Kasia Badura"
             company="CEO"
-            desc="vegan, a mother to an 8-year old. Passionate about zero waste, prefers tea over coffee and it has absolutely nothing to do with her interest in British literature."
+            desc="Vegan, a mother to an 8-year old. Passionate about zero waste, prefers tea over coffee and it has absolutely nothing to do with her interest in British literature."
           ></TestimonialsItem>
           <TestimonialsItem
             className="about-testimonial"
             photo={ania}
             name="Anna Jarosz"
             company="Security specialist"
-            desc="knitter, struggling minimalist. Has one small but very long wiener dog. A big advocate of pineapple on pizza and nothing will convince her otherwise."
+            desc="A knitter and a struggling minimalist. Has one small but very long wiener dog. A big advocate of pineapple on pizza and nothing will convince her otherwise."
           ></TestimonialsItem>
           <TestimonialsItem
             className="about-testimonial"
