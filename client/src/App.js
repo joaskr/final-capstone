@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { AuthContext, useAuthInit } from "./firebase/auth";
 import { FormDataProvider } from "./context/FormData";
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <AuthContext.Provider value={{ loggedIn: authState.loggedIn }}>
       <FormDataProvider>
-        <HashRouter>
+        <BrowserRouter>
           <>
             <Route exact path="/" component={Home}></Route>
             <Route path="/login" component={LoginPage}></Route>
@@ -26,7 +26,7 @@ function App() {
             <Route path="/data" component={DataAnal}></Route>
             <Route path="/contact" component={Contact}></Route>
           </>
-        </HashRouter>
+        </BrowserRouter>
       </FormDataProvider>
     </AuthContext.Provider>
   );
