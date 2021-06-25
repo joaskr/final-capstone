@@ -47,8 +47,8 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.static(path.join(__dirname, "/client/build/")));
-app.get("*", (res, req) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+app.get("/*", (res, req) => {
+  res.sendFile(path.join(__dirname + "/client/src/public/index.html"));
 });
 
 // error handler
