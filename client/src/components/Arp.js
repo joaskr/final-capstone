@@ -16,7 +16,7 @@ const Arp = () => {
     setVisible(true);
   };
   async function fetchData() {
-    await fetch("/arppoison")
+    await fetch("http://localhost:3001/arppoison")
       .then((res) => {
         return res.json();
       })
