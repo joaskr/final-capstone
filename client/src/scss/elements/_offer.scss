@@ -1,5 +1,6 @@
 .offer-section {
-  height: 70vh;
+  // height: 70vh;
+  height: 600px;
   display: flex;
   margin-bottom: 5px;
 }
@@ -44,4 +45,39 @@
     margin-bottom: 5px;
     list-style: none;
   }
+}
+.ad-section {
+  height: 350px;
+  margin-bottom: 5px;
+  background-color: $accent5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ad-section-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .welcome-section {
+    width: 80%;
+    align-self: center;
+    .welcome-section-content {
+      width: 100%;
+    }
+  }
+  .header-icon {
+    color: $accent2;
+  }
+}
+.test-button {
+  align-self: center;
+}
+.ad-section-image {
+  height: 100%;
+  width: 40%;
+  background-image: url("../../assets/webapp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

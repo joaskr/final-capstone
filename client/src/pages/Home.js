@@ -8,6 +8,9 @@ import Video from "../components/Video";
 import Clients from "../components/Clients";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
@@ -27,6 +30,24 @@ function Home() {
           We believe that cybersecurity is crucial in running a business and we are here to help."
         ></Welcome>
         <Columns></Columns>
+        <div className="ad-section">
+          <div className="ad-section-content">
+            <Welcome
+              header="Test Mom-and-Pop's app!"
+              text="
+              Get quick access to the results of your log file scan and be safe!"
+            ></Welcome>
+            <button className="header-button test-button">
+              <NavLink to="/data">
+                <FontAwesomeIcon
+                  className="header-icon"
+                  icon={faChevronCircleRight}
+                />
+              </NavLink>
+            </button>
+          </div>
+          <div className="ad-section-image"></div>
+        </div>
         <Offer id="offer"></Offer>
         <Video></Video>
         <Clients></Clients>

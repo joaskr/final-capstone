@@ -1,39 +1,80 @@
-.radio {
-  background: #454857;
-  padding: 4px;
-  border-radius: 3px;
-  box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
-    0 0 0 3px rgba(185, 185, 185, 0.3);
-  position: relative;
+.buttons {
+  display: flex;
+  justify-content: center;
 }
-
-.radio input {
-  width: auto;
+.data-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.data-table {
+  width: 60%;
   height: 100%;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 2px;
-  padding: 4px 8px;
-  background: #454857;
-  color: #bdbdbdbd;
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  transition: all 100ms linear;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form-control-button {
+    width: 25%;
+    margin-bottom: 25px;
+  }
+  .table {
+    width: 100%;
+    table {
+      width: 100%;
+    }
+  }
+}
+.data-vertical-line {
+  width: 1px;
+  height: 70vh;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table thead tr {
+  background-color: $accent2;
+  color: #ffffff;
+  text-align: left;
+}
+table th,
+table td {
+  padding: 12px 15px;
+  word-wrap: break-word;
+}
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
 }
 
-.radio input:checked {
-  background-image: linear-gradient(180deg, #95d891, #74bbad);
-  color: #fff;
-  box-shadow: 0 1px 1px #0000002e;
-  text-shadow: 0 1px 0px #79485f7a;
+table tbody tr:nth-of-type(even) {
+  background-color: $accent5;
 }
 
-.radio input:before {
-  content: attr(label);
-  display: inline-block;
-  text-align: center;
-  width: 100%;
+table tbody tr:last-of-type {
+  border-bottom: 2px solid $accent2;
+}
+.data-info {
+  width: 40%;
+  height: 100%;
+  padding: 0 40px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+  }
+  .horizontal-line {
+    hr {
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+.data-info > * {
+  margin-bottom: 20px;
 }

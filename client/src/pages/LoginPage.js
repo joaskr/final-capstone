@@ -9,7 +9,7 @@ const LoginPage = () => {
   const { loggedIn } = useAuth();
   const [loginVisible, setLoginVisible] = useState(true);
   if (loggedIn) {
-    return <Redirect to="/" />;
+    return <Redirect to="/data" />;
   }
   const toggleView = () => {
     setLoginVisible(!loginVisible);

@@ -32,17 +32,16 @@ const Register = () => {
     },
     validate,
     onSubmit: (values) => {
-      console.log(values);
       createUser(values);
     },
   });
   const createUser = async (values) => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const credential = await auth.createUserWithEmailAndPassword(
         values.email,
         values.password
       );
-      console.log(credential);
     } catch (error) {
       console.log("error:", error);
     }
