@@ -47,7 +47,7 @@ app.use(function (req, res, next) {
 });
 
 app.get("*", (res, req) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  res.sendFile(path.join(__dirname + "client/build/index.html"));
 });
 
 // error handler
