@@ -16,7 +16,7 @@ const ZipThread = () => {
     setVisible(true);
   };
   async function fetchData() {
-    await fetch("http://localhost:3001/zipthread")
+    await fetch("/zipthread")
       .then((res) => {
         return res.json();
       })

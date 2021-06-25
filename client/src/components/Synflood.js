@@ -17,7 +17,7 @@ const Synflood = () => {
     setVisible(true);
   };
   async function fetchData() {
-    await fetch("http://localhost:3001/synflood")
+    await fetch("/synflood")
       .then((res) => {
         return res.json();
       })
