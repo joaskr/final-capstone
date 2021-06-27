@@ -51,3 +51,11 @@
 .header-button:hover {
   color: $accent2;
 }
+@media screen and (max-height: 900px) {
+  .main-header {
+    font-size: 2.5rem;
+  }
+  .sub-header {
+    font-size: 2rem;
+  }
+}

@@ -5,7 +5,7 @@ function MapComp() {
   return (
     <div className="map-div">
       <Map
-        height={600}
+        height={500}
         defaultCenter={[44.07252113003659, -111.45080644608376]}
         defaultZoom={15}
       >

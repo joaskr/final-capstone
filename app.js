@@ -11,17 +11,32 @@ var zipthread = require("./routes/zipthread");
 
 var app = express();
 
+const whitelist = [
+  "http://localhost:3000",
+  "http://localhost:3001",
+  "https://shrouded-dawn-61849.herokuapp.com",
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    console.log("** Origin of request " + origin);
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      console.log("Origin acceptable");
+      callback(null, true);
+    } else {
+      console.log("Origin rejected");
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
 // view engine setup
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "jade");
 
 app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "/client/build")));
-
+app.use(express.static(path.join(__dirname, "client/build")));
 app.use("/arppoison", arppoison);
 app.use("/synflood", synflood);
 app.use("/zipthread", zipthread);
@@ -30,9 +45,11 @@ app.use("/zipthread", zipthread);
 app.use(function (req, res, next) {
   next(createError(404));
 });
-app.get("*", (res, req) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+
+app.get("/*", (res, req) => {
+  res.sendFile(path.join(__dirname + "client/build/index.html"));
 });
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
