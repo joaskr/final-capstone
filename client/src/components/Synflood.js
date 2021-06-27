@@ -31,7 +31,7 @@ const Synflood = () => {
           Load data
         </button>
         {visible && (
-          <div>
+          <div className="table-inside">
             <h3>Found {length} possible threat&#40;s&#41;</h3>
             <div className="table">
               <table>
@@ -44,22 +44,23 @@ const Synflood = () => {
                     ))}
                   </tr>
                   <ReactTooltip id="0" place="top" effect="solid">
-                    Lorem ipsum
+                    This is the name of the file you sent us.
                   </ReactTooltip>
                   <ReactTooltip id="1" place="top" effect="solid">
-                    Lorem ipsum 1
+                    This is the time of a possible attack.
                   </ReactTooltip>
                   <ReactTooltip id="2" place="top" effect="solid">
-                    Lorem ipsum 2
+                    This is a number of times a possible attacker sent a syn
+                    message is one second.
                   </ReactTooltip>
                   <ReactTooltip id="3" place="top" effect="solid">
-                    Lorem ipsum 3
+                    This is a possible attacker's IP address.
                   </ReactTooltip>
                   <ReactTooltip id="4" place="top" effect="solid">
-                    Lorem ipsum 4
+                    This is a possible attacker's MAC address.
                   </ReactTooltip>
                   <ReactTooltip id="5" place="top" effect="solid">
-                    Lorem ipsum 5
+                    This is additional information abut the packet.
                   </ReactTooltip>
                 </thead>
                 <tbody>

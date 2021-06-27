@@ -30,43 +30,45 @@ const Arp = () => {
           Load data
         </button>
         {visible && (
-          <div>
+          <div className="table-inside">
             <h3>Found {length} possible threat&#40;s&#41;</h3>
-            <table className="table">
-              <thead>
-                <tr>
-                  {headers.map((head, index) => (
-                    <th data-tip data-for={index} id={index} key={index}>
-                      {head}
-                    </th>
-                  ))}
-                </tr>
-                <ReactTooltip id="0" place="top" effect="solid">
-                  Lorem ipsum
-                </ReactTooltip>
-                <ReactTooltip id="1" place="top" effect="solid">
-                  Lorem ipsum 1
-                </ReactTooltip>
-                <ReactTooltip id="2" place="top" effect="solid">
-                  Lorem ipsum 2
-                </ReactTooltip>
-                <ReactTooltip id="3" place="top" effect="solid">
-                  Lorem ipsum 3
-                </ReactTooltip>
-              </thead>
-              <tbody>
-                {synData.map((elem, index) => {
-                  return (
-                    <tr key={index}>
-                      <td>{elem.File}</td>
-                      <td>{elem.Time}</td>
-                      <td>{elem.Source_Mac}</td>
-                      <td>{elem.Info}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="table">
+              <table>
+                <thead>
+                  <tr>
+                    {headers.map((head, index) => (
+                      <th data-tip data-for={index} id={index} key={index}>
+                        {head}
+                      </th>
+                    ))}
+                  </tr>
+                  <ReactTooltip id="0" place="top" effect="solid">
+                    This is the name of the file you sent us.
+                  </ReactTooltip>
+                  <ReactTooltip id="1" place="top" effect="solid">
+                    This is the time of a possible attack.
+                  </ReactTooltip>
+                  <ReactTooltip id="2" place="top" effect="solid">
+                    This is a MAC address of a possible attacker.
+                  </ReactTooltip>
+                  <ReactTooltip id="3" place="top" effect="solid">
+                    This is additional information abut the packet.
+                  </ReactTooltip>
+                </thead>
+                <tbody>
+                  {synData.map((elem, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{elem.File}</td>
+                        <td>{elem.Time}</td>
+                        <td>{elem.Source_Mac}</td>
+                        <td>{elem.Info}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
         )}
       </div>
@@ -79,7 +81,7 @@ const Arp = () => {
         <article>
           <h3>What's an ARP poisoning attack?</h3>
           <p>
-            An attacker sends malicious ARP packets in you network in order to
+            An attacker sends malicious ARP packets in your network in order to
             change the pairings in the IP to MAC tables. ARP Protocol translates
             IP addresses into MAC addresses.
           </p>
