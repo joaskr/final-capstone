@@ -1,6 +1,6 @@
 .clients-section {
-  // height: 30vh;
-  height: 255px;
+  height: 30vh;
+  // height: 255px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -23,4 +23,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-height: 900px) {
+  .clients-section {
+    height: 35vh;
+  }
 }

@@ -64,3 +64,8 @@
   background: $accent3;
   border: 1px solid $accent3;
 }
+@media screen and (max-height: 900px) {
+  .nav-section {
+    height: 10vh;
+  }
+}

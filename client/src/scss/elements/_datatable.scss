@@ -43,6 +43,7 @@ table th,
 table td {
   padding: 12px 15px;
   word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 table tbody tr {
   border-bottom: 1px solid #dddddd;
@@ -77,4 +78,7 @@ table tbody tr:last-of-type {
 }
 .data-info > * {
   margin-bottom: 20px;
+}
+.table-inside {
+  width: 100%;
 }

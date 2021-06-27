@@ -150,3 +150,11 @@
 .form-login > * {
   margin-bottom: 27px;
 }
+@media screen and (max-height: 900px) {
+  .login-content-div {
+    height: 90vh;
+  }
+  .login-content {
+    height: 70vh;
+  }
+}
