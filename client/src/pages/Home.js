@@ -30,6 +30,7 @@ function Home() {
           We believe that cybersecurity is crucial in running a business and we are here to help."
         ></Welcome>
         <Columns></Columns>
+        <Offer id="offer"></Offer>
         <div className="ad-section">
           <div className="ad-section-content">
             <Welcome
@@ -48,10 +49,9 @@ function Home() {
           </div>
           <div className="ad-section-image"></div>
         </div>
-        <Offer id="offer"></Offer>
         <Video></Video>
-        <Clients></Clients>
         <Testimonials></Testimonials>
+        <Clients></Clients>
       </main>
       <footer>
         <Footer class="footer home-footer"></Footer>
