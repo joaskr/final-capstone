@@ -24,3 +24,8 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-height: 900px) {
+  .clients-section {
+    height: 35vh;
+  }
+}

@@ -38,3 +38,8 @@
 .footer-btn:hover {
   background-color: $accent2;
 }
+@media screen and (max-height: 900px) {
+  .footer-content {
+    height: 50%;
+  }
+}

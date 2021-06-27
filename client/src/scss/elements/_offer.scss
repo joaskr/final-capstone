@@ -81,3 +81,24 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-height: 900px) {
+  .offer-section {
+    height: 90vh;
+  }
+  .offer-image-div {
+    width: 30%;
+  }
+  .offer-text-div {
+    width: 70%;
+  }
+  .offer-text {
+    width: 90%;
+    height: 90%;
+  }
+  .ad-section-image {
+    width: 30%;
+  }
+  .ad-section-content {
+    width: 70%;
+  }
+}

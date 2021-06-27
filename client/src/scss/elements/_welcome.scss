@@ -15,3 +15,11 @@
   width: 20vw;
   border-top: 1px;
 }
+@media screen and (max-height: 900px) {
+  .welcome-section {
+    height: 50vh;
+  }
+  .welcome-section-content {
+    height: 60%;
+  }
+}

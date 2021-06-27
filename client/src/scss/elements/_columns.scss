@@ -38,3 +38,8 @@
     width: 30%;
   }
 }
+@media screen and (max-height: 900px) {
+  .columns-section-content {
+    height: 60%;
+  }
+}

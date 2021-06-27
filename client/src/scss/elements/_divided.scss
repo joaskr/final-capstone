@@ -35,3 +35,14 @@
     font-weight: 600;
   }
 }
+@media screen and (max-height: 900px) {
+  .divided-div {
+    height: 80vh;
+  }
+  .divided-text-div {
+    height: 80%;
+  }
+  .left-divided .divided-text-div {
+    height: 70%;
+  }
+}

@@ -31,3 +31,11 @@
     align-self: center;
   }
 }
+@media screen and (max-height: 900px) {
+  .contact-content {
+    height: 90vh;
+  }
+  .contact-form-content {
+    height: 90vh;
+  }
+}
