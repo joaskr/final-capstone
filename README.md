@@ -51,16 +51,16 @@ Proceed to describe how to install / setup one's local environment / get started
 ## Usage
 How does one go about using it?
 Provide various use cases and code examples here.
-Step 1: fork the repo
-Step 2: `cd <your location>`
-Step 3: `git clone <link to your fork>`
-Step 4: `cd <folder with repo>`
-Step 5: `npm install`
-Step 6: `cd client`
-Step 7: `npm install`
-Step 8: `npm run build`
-Step 9: `cd ..`
-Step 10: `npm start`
+Step 1: fork the repo \
+Step 2: `cd <your location>` \
+Step 3: `git clone <link to your fork>` \
+Step 4: `cd <folder with repo>` \
+Step 5: `npm install` \
+Step 6: `cd client` \
+Step 7: `npm install` \
+Step 8: `npm run build` \
+Step 9: `cd ..` \
+Step 10: `npm start` 
 
 
 
