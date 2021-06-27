@@ -45,7 +45,7 @@ function About() {
       </div>
       <MapComp></MapComp>
       <Divided
-        className="divided-div right-divided"
+        class="divided-div right-divided"
         title="our story"
         text={
           <div>
