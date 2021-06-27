@@ -14,7 +14,7 @@ var app = express();
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:3001",
-  "https://shrouded-dawn-61849.herokuapp.com",
+  "mpsafe.herokuapp.com",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
