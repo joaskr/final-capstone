@@ -21,28 +21,28 @@ function About() {
         Ashton, Idaho - the land of potatoes, boars and slow Internet connection. Let us shortly introduce ourselves:"
       ></Welcome>
       <div className="about-columns-container">
-          <TestimonialsItem
-            className="about-testimonial"
-            photo={kasia}
-            name="Kasia Badura"
-            company="CEO"
-            desc="Vegan, a mother to an 8-year old. Passionate about zero waste, prefers tea over coffee and it has absolutely nothing to do with her interest in British literature."
-          ></TestimonialsItem>
-          <TestimonialsItem
-            className="about-testimonial"
-            photo={ania}
-            name="Anna Jarosz"
-            company="Security specialist"
-            desc="A knitter and a struggling minimalist. Has one small but very long wiener dog. A big advocate of pineapple on pizza and nothing will convince her otherwise."
-          ></TestimonialsItem>
-          <TestimonialsItem
-            className="about-testimonial"
-            photo={jo}
-            name="Joanna Skrzypczak"
-            company="Front-end developer"
-            desc="A mother of 3 inside cats, 3 outside cats and a very big dog. Loves chocolate, computer games and insane amounts of coffee."
-          ></TestimonialsItem>
-        </div>
+        <TestimonialsItem
+          className="about-testimonial"
+          photo={kasia}
+          name="Kasia Badura"
+          company="CEO"
+          desc="Vegan, a mother to an 8-year old. Passionate about zero waste, prefers tea over coffee and it has absolutely nothing to do with her interest in British literature."
+        ></TestimonialsItem>
+        <TestimonialsItem
+          className="about-testimonial"
+          photo={ania}
+          name="Anna Jarosz"
+          company="Security specialist"
+          desc="A knitter and a struggling minimalist. Has one small but very long wiener dog. A big advocate of pineapple on pizza and nothing will convince her otherwise."
+        ></TestimonialsItem>
+        <TestimonialsItem
+          className="about-testimonial"
+          photo={jo}
+          name="Joanna Skrzypczak"
+          company="Front-end developer"
+          desc="A mother of 3 inside cats, 3 outside cats and a very big dog. Loves chocolate, books, computer games and insane amounts of coffee."
+        ></TestimonialsItem>
+      </div>
       <MapComp></MapComp>
       <Divided
         className="divided-div right-divided"
