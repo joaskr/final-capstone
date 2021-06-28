@@ -1,13 +1,12 @@
-# Project Name
+# Mom and pop safe
 > Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [https://mpsafe.herokuapp.com/](https://mpsafe.herokuapp.com/).
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
@@ -25,9 +24,20 @@
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- react - version ^17.0.2
+- react-scroll - version ^1.8.2
+- react-router: version ^5.2.0
+- react-tooltip - version ^4.2.21
+- react-elastic-carousel - version ^0.11.5
+- firebase: version ^8.6.8
+- formik: version ^2.2.9
+- node-sass: version ^6.0.0
+- normalize.css: version ^8.0.1
+- pigeon-maps: version ^0.19.6
+- emailjs-com: version ^3.1.0
+- react-fontawesome: version "^0.1.14
+- express - version 4.16.1
+- sqlite3 - version ^5.0.2
 
 
 ## Features
@@ -42,15 +52,8 @@ List the ready features here:
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+Steps to open the project locally: \
 Step 1: fork the repo \
 Step 2: `cd <your location>` \
 Step 3: `git clone <link to your fork>` \
@@ -63,20 +66,20 @@ Step 9: `cd ..` \
 Step 10: `npm start` 
 
 
-
 ## Project Status
 Project is: _in progress_
 
+
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Code quality
+- Rethink structure of components
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Add responsiveness - mobile devices and tablets are not supported
+- Improve code quality
+- Fix issue with paths - heroku deploy
 
 
 ## Acknowledgements
