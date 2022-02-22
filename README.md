@@ -1,5 +1,5 @@
 # Mom and pop safe
-> Outline a brief description of your project.
+> Project created for the final capstone at Akamai Technical Academy. 
 > Live demo [https://mpsafe.herokuapp.com/](https://mpsafe.herokuapp.com/).
 
 ## Table of Contents
@@ -12,15 +12,14 @@
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- The goal was to create a website for a fictional cybersecurity company with a simple login logic and displaying results from a database.
+- The main requirement was to create a websie in html and css but my team wanted to do something extra.
+- I used react as a base and sass.
+- Backend is done with node.js, express.js and sqlite3.
+- For login I used firebase.
 
 
 ## Technologies Used
@@ -42,9 +41,7 @@
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Login with username: test and password: test123 to see blocked tab.
 
 
 ## Screenshots
