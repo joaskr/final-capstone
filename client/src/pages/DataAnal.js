@@ -33,7 +33,7 @@ function DataAnal() {
             { label: "Zip threat", value: "zip" },
           ]}
           setValue={(newValue) => setActivePage(newValue)}
-          style={{ width: 400, color: "#a53f52" }} // purple400
+          style={{ width: 400, color: "#a53f52" }}
         />
       </div>
       {dataContent}
